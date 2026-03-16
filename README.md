@@ -8,8 +8,10 @@ Didalam form dapat mengisi
    - Judul Buku
    - Nama Pengarang
    - Tahun Terbit
-   - Tombol Simpan  
-3. Hapus List
+   - Tombol Simpan
+3. Read (Menampilkan Data)
+4. Update (Edit Data)  
+3. Delete List
 4. Pindah halaman selanjutnya 
 5. Balik ke halaman sebelumnya
 ### Widget yang Digunakan
