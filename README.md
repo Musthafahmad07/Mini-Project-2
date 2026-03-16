@@ -1,41 +1,107 @@
-# Aplikasi Manajemen Perpustakaan
-### Deskripsi Aplikasi
+# 📚 Aplikasi Manajemen Perpustakaan
+## Deskripsi Aplikasi
 Aplikasi ini merupakan aplikasi Manajemen Perpustakaan sederhana yang dibuat menggunakan Flutter dengan bahasa pemrograman Dart. Aplikasi ini bertujuan untuk membantu pengguna dalam menambahkan dan menyimpan data buku, termasuk informasi seperti judul buku, nama pengarang, dan tahun terbit.
-### Fitur Aplikasi
-1. Form tambah buku
-   
-Didalam form dapat mengisi
+
+## ✨ Fitur Aplikasi
+
+#### 1. Menampilkan Data Buku (Read)
+
+- Aplikasi menampilkan daftar buku yang diambil dari database Supabase.
+
+- Data ditampilkan dalam bentuk list yang berisi judul buku, pengarang, dan tahun.
+
+#### 2. Menambahkan Data Buku (Create)
+
+- Pengguna dapat menambahkan buku baru melalui halaman form.
+
+- Data yang dimasukkan meliputi:
+
    - Judul Buku
+
    - Nama Pengarang
+
    - Tahun Terbit
-   - Tombol Simpan
-3. Read (Menampilkan Data)
-4. Update (Edit Data)  
-3. Delete List
-4. Pindah halaman selanjutnya 
-5. Balik ke halaman sebelumnya
-### Widget yang Digunakan
-1. StatelessWidget → Widget tanpa state (tampilan tetap).
-2. Scaffold → Kerangka dasar halaman (AppBar, body, FAB, bottom bar).
-3. AppBar → Bar judul di bagian atas aplikasi.
-4. ListView.builder → Menampilkan daftar data secara dinamis.
-5. ListTile → Item daftar dengan title, subtitle, dan icon.
-6. Row → Menyusun widget secara horizontal.
-7. Column → Menyusun widget secara vertikal.
-8. Padding → Memberi jarak di sekitar widget.
-9. SizedBox → Memberi jarak atau ukuran tertentu.
-10. Spacer → Memberi ruang kosong fleksibel.
-11. Center → Memposisikan widget di tengah.
-12. Text → Menampilkan teks.
-13. Icon → Menampilkan ikon.
-14. CircleAvatar → Menampilkan ikon/gambar berbentuk lingkaran.FloatingActionButton → Tombol aksi utama mengambang.
-15. BottomAppBar → Bar bagian bawah aplikasi.TextButton → Tombol berbasis teks.
-16. ElevatedButton → Tombol dengan efek timbul.
-17. ElevatedButton.icon → Tombol dengan ikon dan teks.
-18. Form → Wadah untuk validasi input.
-19. TextFormField → Input teks dengan fitur validasi.
-20. IconButton → Tombol berbentuk ikon.
-21. TextEditingController → Mengontrol dan mengambil nilai input teks.
-22. Get.to() → Navigasi ke halaman lain.
-23. Get.back() → Kembali ke halaman sebelumnya.
-24. Get.snackbar() → Menampilkan notifikasi pesan singkat.
+
+#### 3. Mengubah Data Buku (Update)
+
+- Pengguna dapat mengedit data buku yang sudah ada.
+
+- Form akan otomatis menampilkan data sebelumnya untuk diperbarui.
+
+#### 4. Menghapus Data Buku (Delete)
+
+- Pengguna dapat menghapus data buku dari database.
+
+- Sebelum menghapus, aplikasi akan menampilkan dialog konfirmasi.
+
+#### 5. Validasi Form Input
+
+- Melakukan validasi agar semua field harus diisi.
+
+- Field tahun hanya boleh berupa angka.
+
+#### 6. Dark Mode & Light Mode
+
+- Pengguna dapat mengganti tema aplikasi antara mode terang dan mode gelap.
+
+#### 7. Notifikasi Aksi
+
+- Aplikasi menggunakan snackbar untuk menampilkan notifikasi ketika data berhasil dihapus atau terjadi kesalahan input.
+
+## 🧩 Widget yang Digunakan
+
+Berikut beberapa widget Flutter yang digunakan dalam aplikasi ini:
+
+#### Widget Layout
+
+Scaffold → Struktur dasar halaman aplikasi
+
+AppBar → Menampilkan judul halaman
+
+Column → Mengatur widget secara vertikal
+
+Padding → Memberi jarak pada widget
+
+SizedBox → Memberi jarak antar widget
+
+#### Widget Input
+
+TextFormField → Input data buku
+
+Form → Mengelompokkan input form
+
+ElevatedButton → Tombol untuk menyimpan atau update data
+
+Widget List & Tampilan Data
+
+ListView.builder → Menampilkan daftar buku
+
+Card → Tampilan data buku dalam bentuk kartu
+
+ListTile → Layout item pada list buku
+
+CircleAvatar → Icon buku pada list
+
+#### Widget Navigasi & Interaksi
+
+FloatingActionButton → Tombol untuk menambah data buku
+
+IconButton → Tombol edit, delete, dan perubahan tema
+
+Dialog → Konfirmasi penghapusan data
+
+#### Widget Utility
+
+SnackBar (melalui GetX) → Menampilkan notifikasi
+
+GetMaterialApp → Navigasi dan state management menggunakan GetX
+
+## 🛠 Teknologi yang Digunakan
+
+- Flutter
+
+- Supabase
+
+- GetX
+
+- Dart
